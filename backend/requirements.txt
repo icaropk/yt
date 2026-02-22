@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+youtube-transcript-api
+google-generativeai
+openai
+pydantic
+python-dotenv
