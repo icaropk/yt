@@ -1,20 +1,12 @@
-version: '3.8'
-
 services:
   backend:
     build: 
-      context: ./backend
-      dockerfile: Dockerfile
-    ports:
-      - "8000:8000"
-    volumes:
-      - ./backend/config.json:/app/config.json
+      context: https://github.com/icaropk/yt.git#main:backend
     restart: always
 
   frontend:
     build:
-      context: ./frontend
-      dockerfile: Dockerfile
+      context: https://github.com/icaropk/yt.git#main:frontend
     ports:
-      - "80:80"
+      - "3000:80"
     restart: always
